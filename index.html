@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #fffefe;
+        }
+        .business-card {
+            width: 350px;
+            min-height: 450px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: contain; /* Menjaga gambar agar tidak terpotong */
+        }
+        .name {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #333333;
+        }
+        .title {
+            font-size: 1em;
+            color: #777777;
+            margin-bottom: 15px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: #555555;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:nth-child(1):hover { color: #0077b5; } /* LinkedIn */
+        .social-links a:nth-child(2):hover { color: #171515; } /* GitHub */
+        .social-links a:nth-child(3):hover { color: #1da1f2; } /* Twitter */
+        .social-links a:nth-child(4):hover { color: #e4405f; } /* Instagram */
+        .contact {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #555555;
+        }
+        .contact p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 8px 0;
+        }
+        .contact p i {
+            color: #555555; /* Default warna ikon kontak */
+            transition: color 0.3s;
+        }
+        .contact p i:hover {
+            color: #1da1f2; /* Warna biru saat hover */
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 0.7em;
+            color: #aaaaaa;
+        }
+        .section-title {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div class="business-card">
+    <img src="img/WhatsApp_Image_2025-01-13_at_02.38.04-removebg-preview - editpasfoto.com.png" alt="Profile Picture" class="profile-pic">
+    <div class="name">Bima Alfareza</div>
+    <div class="title">Web Developer & Designer</div>
+    <p>Membangun website dan aplikasi dengan desain yang menarik dan responsif.</p>
+
+    <!-- Section Title -->
+    <div class="section-title">Kunjungi profil saya:</div>
+
+    <!-- Kolom Media Sosial -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/bima-alfareza" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/bima-alfareza" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/bimaalfareza" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/bima.alfareza" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Kolom Kontak -->
+    <div class="contact">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:bimaalfa05@gmail.com">bimaalfa05@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+6285601651141">+62 856-0165-1141</a></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Bima Alfareza. Semua hak dilindungi.</p>
+    </div>
+</div>
+
+</body>
+</html>
